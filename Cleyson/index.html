@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Consulta a cep</h1>
+    <form onsubmit="buscar(e)" id="forms">
+        <label for="cep"><strong>CEP:</strong></label>
+        <input type="number" id="cep">
+        <br>
+        <label for="logradouro"><strong>LOGRADOURO:</strong></label>
+        <input type="text" id="logradouro" placeholder="">
+        <br>
+        <label for="numero"><strong>NUMERO:</strong></label>
+        <input type="number" id="numero" placeholder="">
+        <br>
+        <label for="bairro"><strong>BAIRRO:</strong></label>
+        <input type="text" id="bairro" placeholder="">
+        <br>
+        <label for="cidade"><strong>CIDADE:</strong></label>
+        <input type="text" id="cidade" placeholder="">
+        <br>
+        <label for="uf"><strong>UF:</strong></label>
+        <input type="text" id="uf" placeholder="">
+        <button type="button" id="buscar-button" onclick="buscar()">Enviar</button>
+    </form>
+</body>
+</html>
