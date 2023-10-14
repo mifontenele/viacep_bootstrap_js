@@ -15,14 +15,14 @@
         <section class="row mt-5 align-items-center">
         <!-- criado duas divs para separar a tela ao meio -->
            <div class="col">
-            <img class="tamanho" src="./localizacao.svg" alt="localizacao">
+            <img class="img-fluid" src="./localizacao.svg" alt="localizacao">
            </div>
            <div class="col">
             <article class="card card-body">
             <!-- formulario quer ira receber as informações do ViaCep -->
                 <form action="">
                     <label for="cep">CEP</label>
-                    <input id="cep" type="text" class="form-control mb-3" placeholder="Somente numeros">
+                    <input id="cep" type="text" onkeyup="somenteNumeros(this);" class="form-control input-sm mb-3" placeholder="Digite apenas números" maxlength="8">
 
                     <label for="endereco">Endereço</label>
                     <input id="endereco" type="text" class="form-control mb-3">
